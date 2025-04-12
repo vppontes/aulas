@@ -1,0 +1,43 @@
+.imagemTabuleiro {
+    width:20%;
+    border-color: black;
+    border-width:0.5%;
+    border-style: solid;
+}
+.imagemLinks {
+    width:12%;
+    filter:grayscale(1);
+}
+.imagemLinks:hover {
+    filter:grayscale(0)
+}
+li {
+    font-size:large;
+    margin-left:12vw;
+}
+.texto {
+    font-size: larger;
+}
+.principal {
+    background-color: aquamarine;
+    width:90%;
+}
+.pecas {
+    background-color: blueviolet;
+    width:100%;
+}
+.imagemPecas {
+    position: relative;
+    top:30px;
+    width:9vw;
+}
+.imagemMov {
+    width:15%;
+    border-color: black;
+    border-width:0.5%;
+    border-style: solid;
+    float:right;
+    position: relative;
+    top:10px;
+    right:10px;
+}

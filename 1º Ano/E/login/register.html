@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styleRegister.css">
+</head>
+<body>
+    <main id="container">
+        <div class="spaceLogin">
+            <div class="login">
+                <h1>CADASTRE-SE</h1>
+                <form action="./login.html">
+                    <p>Nome Completo</p>
+                    <input type="text" placeholder="Nome" required>
+                    <div class="genero">
+                        <div>
+                            <input type="radio" name="genero" value="masc">
+                            <p>Masculino</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="genero" value="fem">
+                            <p>Feminino</p>
+                        </div>
+                    </div>
+                    <p>E-mail</p>
+                    <input type="email" placeholder="E-mail" required>
+                    <p>Usuário</p>
+                    <input type="text" placeholder="Usuário" required>
+                    <p>Senha</p>
+                    <input type="password" placeholder="Senha" required>
+                    <div class="checkRegister">
+                        <input type="checkbox" name="checkBox" required>
+                        <span>Concordo com os termos da plataforma.</span>
+                    </div>
+                    <div class="checkRegister">
+                        <input type="checkbox" name="checkBox">
+                        <span>Desejo receber emails exclusivos sobre a plataforma.</span>
+                    </div>
+                    <button type="submit" id="registerBtn">cadastrar-se</button>
+                </form>
+                <div>
+                    <p>já possui uma conta? faça o <a href="login.html">Login</a> aqui.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

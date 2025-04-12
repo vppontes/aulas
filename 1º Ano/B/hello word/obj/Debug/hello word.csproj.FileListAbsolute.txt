@@ -1,0 +1,7 @@
+C:\Users\Aluno\Desktop\10_11\hello word\obj\Debug\hello word.csproj.AssemblyReference.cache
+C:\Users\Aluno\Desktop\10_11\hello word\obj\Debug\hello word.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\10_11\hello word\bin\Debug\hello word.exe.config
+C:\Users\Aluno\Desktop\10_11\hello word\bin\Debug\hello word.exe
+C:\Users\Aluno\Desktop\10_11\hello word\bin\Debug\hello word.pdb
+C:\Users\Aluno\Desktop\10_11\hello word\obj\Debug\hello word.exe
+C:\Users\Aluno\Desktop\10_11\hello word\obj\Debug\hello word.pdb

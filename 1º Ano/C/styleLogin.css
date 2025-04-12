@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --main-color: #1c1c1c;
+    --second-color: whitesmoke;
+    --alternative-color: #4681f4;
+    --alternative-color2: #ccc;
+}
+
+body {
+    background-color: var(--alternative-color);
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.spaceImg {
+    background-color: var(--alternative-color);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+.spaceImg h1 {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.spaceImg svg {
+    width: 80%;
+}
+
+.spaceLogin {
+    background-color: #cccc;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.login {
+    background-color: whitesmoke;
+    width: 65%;
+    height: 350px;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    box-shadow: 10px 20px 30px #1c1c1ccb;
+}
+
+.login h1 {
+    font-size: 2.5vw;
+}
+
+.login form {
+    text-align: left;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.login form p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login form input {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 5px 10px rgba(0, 8, 0, 0.411);
+    height: 30px;
+    padding: 2px 20px;
+}
+
+.login form button {
+    background-color: var(--alternative-color);
+    border: 0;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: bold;
+    color: whitesmoke;
+
+    transition: all .2s ease-in-out;
+}
+
+.login form button:hover {
+    transform: translate(0px, -3px) scale(1.05);
+    box-shadow: 0 5px 20px #1c1c1ccb;
+    background-color: #245ed3;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 700px) {
+    .spaceImg {
+        display: none;
+    }
+
+    .spaceLogin {
+        width: 100%;
+    }
+
+    .login h1 {
+        font-size: 26pt;
+    }
+}

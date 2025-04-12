@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XADREZ</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="conjuntoDarkMode">
+            <ion-icon name="sunny-outline"></ion-icon>
+            <div id="btnDarkMode">
+                <div id="indicator" class="indicator"></div>
+            </div>
+            <ion-icon name="moon-outline"></ion-icon>
+        </div>
+
+        <div id="itensHeader">
+            <img class="logo" src="./img/logo.png" alt="LogoHeader">
+            <a href="index.html" class="link2">
+                <h1>Xadrez</h1>
+                <h3>.ae</h3>
+            </a>
+        </div>
+        <button id="menuBtn"><ion-icon name="menu"></ion-icon></button>
+    </nav>
+
+    <aside>
+        <div class="menu">
+            <button id="loginBtn" value="login">
+                <a href="./login/login.html" class="link">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <h3>perfil</h3>
+                </a>
+            </button>
+            
+        </div>
+        <div id="closeBtn"><ion-icon name="close-outline"></ion-icon></div>
+    </aside>
+    <div class="fillet"></div>
+
+    <header>
+        <video src="abertura.mp4" autoplay loop muted></video>
+        <div class="filter"></div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Onde vem esta guerra sem fim?</h1>
+
+            <p>O xadrez é um jogo de tabuleiro estratégico com uma história que remonta a cerca de 1.500 anos. Suas origens estão na Índia, onde o jogo era conhecido como "chaturanga" e representava quatro tipos de tropas do exército indiano antigo:</p>
+            <ul type="square">
+                <li>O Rei, Raja;</li>
+                <li>O Conselheiro ou Ministro, Mantri;</li>
+                <li>O Elefante, Gaja;</li>
+                <li>E o Cavalo, Ashva.</li>
+            </ul>
+            <p>Os persas adotaram o chaturanga como "shatranj" e fizeram modificações nas regras e no design do tabuleiro. A expansão islâmica ajudou a disseminar o xadrez pela civilização islâmica, onde o jogo foi refinado e documentado em manuscritos. Os árabes desempenharam um papel fundamental na introdução do xadrez na Europa medieval, onde o jogo começou a ganhar popularidade. Durante o Renascimento, o xadrez se tornou um jogo da elite e intelectuais, encontrando grande aceitação nas cortes reais. Nesse período, muitas das regras modernas do xadrez foram estabelecidas, incluindo o movimento do bispo e a capacidade de mover dois espaços com os peões no primeiro movimento.</p>
+            <p>Nos séculos XVIII (18) e XIX (19), organizações de xadrez foram estabelecidas, e os primeiros campeonatos de xadrez surgiram. Wilhelm Steinitz foi reconhecido como o primeiro campeão mundial de xadrez em 1886.</p>
+            <p>O século XX (20) viu o xadrez continuar a evoluir, com jogadores notáveis como Bobby Fischer e Garry Kasparov marcando época. Kasparov, em particular, foi um dos campeões mundiais mais dominantes da história.</p>
+            <p>No século XXI (21, atualmente), o xadrez continua sendo popular em todo o mundo, com a tecnologia permitindo a transmissão online e partidas contra oponentes globais como o site do chess.com sendo um dos maiores sites para se jogar xadrez.</p>
+            <p>Jogadores como Magnus Carlsen, considerado o melhor jogador atualmente, ajudaram a popularizar o xadrez por meio da Internet. O xadrez é apreciado por sua complexidade estratégica e tática, sendo um jogo intelectual e um esporte competitivo. Sua história rica e tradição o tornam um dos jogos de tabuleiro mais duradouros e fascinantes do mundo.</p>
+
+            <h2>Jogadores</h2>
+            <p>Sven Magnus Øen Carlsen, mais conhecido como apenas Magnus Carlsen, é um grande mestre de xadrez norueguês e campeão mundial de xadrez clássico de 2013 a 2023.</p>
+            <p>Krikor Sevag Mekhitarian, jogador profissional de xadrez da Furia (organização de e-sports brasileira), bicampeão brasileiro e cinco vezes integrante da equipe olímpica nacional.</p>
+            <p>Judit Polgár é uma grande mestre húngara de xadrez. Ela é considerada a mais forte jogadora de xadrez da história. Em 1991, tornou-se a pessoa mais jovem a conquistar o título de Grande Mestre Internacional (GM).</p>
+            <p>Daniele Silva Barroso, mais conhecida como Xadreza, Campeã Brasileira escolar (sub 15 feminino), atua no campeonato brasileiro feminino de xadrez.</p>
+
+            <h1>Entenda como jogar:</h1>
+
+            <h2>Qual é o objetivo?</h2>
+            <p>O jogo é ganho com o xeque-mate - quando o rei fica preso sem nenhum movimento a fazer sem que o comprometa.</p>
+
+            <h2>Tabuleiro:</h2>
+            <p>O xadrez é um jogo fácil de aprender. É jogado em um tabuleiro de 8x8 com 64 casas e 32 peças, sendo elas 8 peões, 4 cavalos, 4 torres, 4 bispos, 2 rainhas e 2 reis. Dividias 16 brancas e pretas, para cada jogador:</p>
+            
+            <h2>Peças do tabuleiro:</h2>
+            <ul type="square">
+                <li>
+                    Rei: O rei pode se mover para qualquer casa que esteja diretamente ao lado dele para cima, para baixo, para os lados ou na diagonal. Aqui vai um exemplo:
+                    <img src="img/BrancoRei.png">
+                    <img src="img/MovRei.png">
+                </li>
+                    
+                <li>
+                    Dama: A dama, a peça mais importante do tabuleiro, pode se mover para frente, para trás, para os lados e na diagonal como um rei. A dama pode mover-se quantas casas quiser em cada uma dessas direções. Segue um exemplo:
+                    <img src="img/BrancoDama.png">
+                    <img src="img/MovDama.png">
+                </li>
+
+                <li>
+                    Torre: A torre pode se mover para frente, para trás e para os lados como uma dama. Somente não para as diagonais. Veja:
+                    <img src="img/BrancoTorre.png">
+                    <img src="img/MovTorre.png">
+                </li>
+
+                <li>
+                    Bispo: O bispo pode se mover apenas na diagonal como uma damaCada lado começa com dois bispos, um em uma casa clara e outro em uma casa escura. Demonstração:
+                    <img src="img/BrancoBispo.png">
+                    <img src="img/MovBispo.png">
+                </li>
+
+                <li>
+                    Cavalo: O cavalo é a única peça de xadrez que não anda em linha reta. O cavalo se move duas casas em uma direção e depois vira e anda mais uma em outra direção, ou melhor, em formato semelhante à um L. É a única peça capaz de pular sobre outras peças. Segue um exemplo:
+                    <img src="img/BrancoCavalo.png">
+                    <img src="img/MovCavalo.png">
+                </li>
+
+                <li>
+                    Peão: Os peões se movem uma casa para frente a cada lance. No entanto, no primeiro lance do peão ele pode avançar uma ou duas casas em seu primeiro lance. Além disso, os peões só podem capturar uma peça que esteja uma casa à frente na diagonal. Outra característica do peão é que se ele chegar ao fim do tabuleiro, do lado contrário que ele começou, pode-se promovê-lo a cavalo, bispo, torre ou dama. Veja o movimento padrão do peão e o movimento para pegar uma outra peça (onde estão as torres):
+                    <img src="img/BrancoPeao.png">
+                    <img src="img/MovPeao.png">
+                    <img src="img/movPeaoComer.png">
+                </li>
+            </ul>
+
+            <p>Agora que você sabe como as peças se movem, é hora de arrumar o tabuleiro e iniciar a partida. Cada jogador começa com uma casa clara no canto inferior direito. As torres são colocadas nos cantos, com cavalos ao lado delas, seguidos pelos bispos. Reis e damas são colocados nas casas centrais da fileira de trás com a dama em casa de mesma cor. Todos os peões começam na 2ª fileira. E assim se espelha do outro lado do tabuleiro. Agora tente fazer:</p>
+
+            <h2>Onde jogar?</h2>
+            <p>Se você não tem consigo um tabuleiro e peças para jogar xadrez. Exitem sites e aplicativos onde o xadrez pode ser jogado, ensinado, onde você pode se interessar mais sobre e conhecer jogadas como Pastorzinho, Gambitos e muito mais. Além de também poder acompanhar e ver transmissões de partidas oficias.</p>
+
+            <h2>Sites:</h2>
+            <a href="chess.com">
+                <img src="https://dslv9ilpbe7p1.cloudfront.net/KLha1rKrFMZBP-pY1S06uA_store_logo_image.png" class="">
+            </a>
+            <a href="chesss24.com">
+                <img src="https://assets.chess24.com/assets/0d1b6e1141a8ddb013b63c8b8e9de6c0/images/c24-logo-web.svg" class="">
+            </a>
+        </section>
+    </main>
+</body>
+</html>

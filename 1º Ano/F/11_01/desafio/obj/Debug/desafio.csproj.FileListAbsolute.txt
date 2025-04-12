@@ -1,0 +1,7 @@
+D:\11_01\desafio\bin\Debug\desafio.exe.config
+D:\11_01\desafio\bin\Debug\desafio.exe
+D:\11_01\desafio\bin\Debug\desafio.pdb
+D:\11_01\desafio\obj\Debug\desafio.csproj.AssemblyReference.cache
+D:\11_01\desafio\obj\Debug\desafio.csproj.CoreCompileInputs.cache
+D:\11_01\desafio\obj\Debug\desafio.exe
+D:\11_01\desafio\obj\Debug\desafio.pdb

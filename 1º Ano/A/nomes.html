@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice 1</title>
+</head>
+<body>
+<script>
+    const nomes = ["João", "Juliana", "Ana", "Caio",
+    "Lara", "Marjorie", "Guilherme", "Aline",
+    "Fabiana", "André", "Carlos", "Paulo", "Bia",
+    "Vivian", "Isabela", "Vinícius", "Renan",
+    "Renata", "Daisy", "Camilo"];
+
+    document.write(`Tamanho do array: ${nomes.length} <br>`);
+
+    const sala1 = nomes.slice(0, nomes.length/2)
+
+    document.write(`Tamanho do array: ${sala1.length} <br>`);
+
+    const sala2 = nomes.slice(nomes.length/2)
+
+    document.write(`Tamanho do array: ${sala2.length} <br>`);
+
+</script>    
+</body>
+</html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+:root {
+    --main-color: #0a0b0b;
+    --second-color: #fefffe;
+    --alternative-color: #f9e6c7;
+    --alternative-color2: #cccc;
+    --alternative-color3: #432818;
+    --alternative-color4: #99582a;
+}
+
+body {
+    background-color: var(--second-color);
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.spaceLogin {
+    background-color: #cccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.login {
+    background-color: whitesmoke;
+    width: 65%;
+    height: 600px;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    box-shadow: 10px 20px 30px #1c1c1ccb;
+}
+
+.genero {
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.genero div {
+    display: flex;
+    flex-direction: row;
+}
+
+.genero div p {
+    margin-left: 5px;
+}
+
+.login form {
+    text-align: left;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.login form p:nth-child(n):not(:nth-child(2)):not(:nth-child(3)) {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login form input[type='text'], input[type='password'], input[type='email'] {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 5px 10px rgba(0, 8, 0, 0.411);
+    height: 30px;
+    width: 400px;
+    padding: 2px 20px;
+}
+
+.login form .checkRegister {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.login form .checkRegister input[type='checkbox'] {
+    width: 20px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.login form .checkRegister span {
+    margin-left: 10px;
+}
+
+.login form button {
+    background-color: var(--alternative-color4);
+    border: 0;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: bold;
+    color: var(--second-color);
+    margin-top: 20px;
+
+    transition: all .2s ease-in-out;
+}
+
+.login form button:hover {
+    transform: translate(0px, -3px) scale(1.05);
+    box-shadow: 0 5px 10px #1c1c1ccb;
+}

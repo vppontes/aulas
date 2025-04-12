@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dom </title>
+</head>
+<body>
+
+    <h1> Sistema de Alunos  </h1>
+
+    <form action="">
+   <label for="nome"> Nome dos Alunos: </label> <input  type="text" id="nome">
+
+   <br><br><br>
+
+   <label for="nota1"> Nota 1: </label> <input type="number" value="nota1" id="nota1">
+   <label for="nota2"> Nota 2: </label> <input type="number" value="nota2" id="nota2">
+   <label for="meida"> Exibir Média e SItuação<label> <input type="button" value="media" id="media">
+</form>
+
+<h3 id="media">
+    
+</h3>
+<p></p>
+
+
+<pre></pre>
+    <script>
+
+        const frm = document.querySelector('form')
+        const anuncio = document.querySelector('h3')
+        const resposta = document.querySelector('p')
+
+        frm.media.addEventListener('click', () => {
+
+            var num1 = Number(frm.nota1.value)
+            var num2 = Number(frm.nota2.value)
+            var final = (num1 + num2)/2
+            var aluno = frm.nome.value
+
+            if (final >=7){
+
+                anuncio.innerText = `A média é ${final}`
+                resposta.innerText = `Parabéns ${aluno}, você foi aprovado !`
+
+            }
+
+            else if (final <7 && final >= 4){
+                anuncio.innerText = ` A média é ${final}`
+                resposta.innerText = `O ${aluno} está de exame`
+
+            }
+
+            else{
+                anuncio.innerText = `A média é ${final}`
+                resposta.innerText = `O ${aluno} está reprovado`
+            }
+        })
+
+
+
+
+    </script>
+    
+</body>
+</html>

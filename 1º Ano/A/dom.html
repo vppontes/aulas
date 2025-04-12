@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dom </title>
+</head>
+<body>
+
+    <h1> Programa Par ou Ímpar </h1>
+
+    <form action="">
+   <label for="numero"> Número: </label> <input value="numero" type="number" id="numero">
+
+   <br><br><br>
+
+   <label for="verificar"> Par ou Ímpar </label> <input type="button" value="Verificar" id="verificar">
+</form>
+
+<p></p>
+
+<pre></pre>
+    <script>
+
+        const frm = document.querySelector('form')
+        const resposta = document.querySelector('p')
+
+        frm.verificar.addEventListener('click', () => {
+
+            var num = frm.numero.value
+            var final = num % 2
+
+            if (final != 0){
+
+                resposta.innerText = `O número ${num} é ímpar`
+            }
+
+            else{
+                resposta.innerText = `O número ${num} é par`
+            }
+        })
+
+
+
+
+    </script>
+    
+</body>
+</html>
