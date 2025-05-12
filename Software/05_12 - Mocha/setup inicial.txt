@@ -1,0 +1,7 @@
+Setup inicial:
+
+npm init -y
+npm i mocha
+"scripts": {
+	"test": "mocha"
+}
